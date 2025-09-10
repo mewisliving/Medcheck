@@ -19,18 +19,42 @@
         </nav>
     </header>
        <div class="container">
-            <div id="diagnosis-app">
-                <div class="app-header">
+             <div id="diagnosis-app">
+                 <div class="app-header">
                     <h2>Symptom Checker</h2>
-                    <p>Select the symptoms you're experiencing to see possible conditions</p>
-                </div>
-                
-            <div class="search-box">
-                    <input type="text" id="symptom-search" placeholder="Search for symptoms...">
-                </div>
-                
-                <div class="symptoms-container" id="symptoms-list">
-                </div>
+                     <p>Select the symptoms you're experiencing...</p>
+                  </div>
+
+                    <div class="disclaimer">
+                        <strong>Disclaimer:</strong> This tool is for informational purposes only.
+                    </div>
+
+                    <div class="search-box">
+                         <input type="text" id="symptom-search" placeholder="Search for symptoms...">
+                     </div>
+
+                     <div class="symptoms-container" id="symptoms-list"></div>
+
+                    <div class="selected-symptoms">
+                        <h2>Selected Symptoms</h2>
+                        <div id="selected-symptoms-list"></div>
+                    </div>
+
+                    <button id="analyze-btn">Analyze Symptoms</button>
+
+                    <div class="results" id="results-container">
+                        <div class="no-results" id="no-results">
+                            Select symptoms and click "Analyze Symptoms"
+                        </div>
+                        <div id="results-list"></div>
+                    </div>
+
+                     <div class="back-to-home">
+                        <a href="index.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                    </div>
+              </div>
+        </div>
+
         <script src="scripts/checker.js"></script>
     </body>
     </html>
